@@ -1,0 +1,9 @@
+{
+    "extends": "../generic-tsconfig.json",
+    "include": [
+      "../../typings-custom/**/*.ts"
+    ],
+    "compilerOptions": {
+        "lib": ["esnext", "dom"]
+      }
+  }

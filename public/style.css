@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    user-select: none;
+}
+
+body div{
+    margin: auto;
+}
+
+.button{
+    background-color: lightgray;
+    width: 400pt;
+    font-size: 20pt;
+    border: 3pt solid black;
+    padding: 10pt;
+    text-align: center;
+    border-radius: 10pt;
+    margin: 30pt;
+    cursor: pointer;
+}
+ 
+.button.disabled{
+    color: gray;
+    cursor: not-allowed;
+}
+
+.status{
+    margin: 30pt;
+    width: 400pt;
+    background-color: lightgray;
+    border: 1pt solid gray;
+    height: 200pt;
+    padding: 10pt;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.status div{
+    margin-bottom: 10pt;
+}
+
+.status div.ok{
+    color: green;
+}
+
+.status div.warn{
+    color: rgb(138, 90, 0);
+}
+
+.status div.error{
+    color: red;
+}
+
+.status div.info{
+    color: gray;
+}
